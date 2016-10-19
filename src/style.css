@@ -1,0 +1,8 @@
+.title {
+  composes: title from 'sass!./styles/common.sass';
+  color: red;
+}
+
+.button {
+  composes: button is-primary from 'sass!./styles/common.sass';
+}

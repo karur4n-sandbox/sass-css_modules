@@ -1,12 +1,4 @@
-const autoprefixer = require('autoprefixer')
 const path = require('path')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
-
-const sassLoaders = [
-  'css-loader',
-  'postcss-loader',
-  'sass-loader'
-]
 
 const config = {
   entry: {
@@ -21,7 +13,6 @@ const config = {
       },
       {
         test: /\.css/,
-        // loader: ExtractTextPlugin.extract('style-loader', sassLoaders.join('!'))
         loaders: ["style", "css?modules"]
       }
     ]
